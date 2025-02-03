@@ -99,6 +99,9 @@
                         value="yamada@mail.com"
                         required
                       />
+                      <div th:if="${errorMessage}" class="alert alert-danger">
+                        <span th:text="${errorMessage}"></span>
+                    </div>
                     </div>
                   </div>
                 </div>
