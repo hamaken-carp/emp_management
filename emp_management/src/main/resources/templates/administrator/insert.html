@@ -72,6 +72,7 @@
                         th:field="*{name}"
                         th:errorclass="error-input"
                         value="山田太郎"
+
                       />
                     </div>
                   </div>
@@ -96,7 +97,11 @@
                         th:field="*{mailAddress}"
                         th:errorclass="error-input"
                         value="yamada@mail.com"
+                        
                       />
+                      <div th:if="${errorMessage}" class="alert alert-danger">
+                        <span th:text="${errorMessage}"></span>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -120,6 +125,8 @@
                         th:field="*{password}"
                         th:errorclass="error-input"
                         value="xxxxxxxx"
+                        
+                        
                       />
                     </div>
                   </div>

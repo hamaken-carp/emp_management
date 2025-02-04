@@ -40,4 +40,7 @@ public class AdministratorService {
 		Administrator administrator = administratorRepository.findByMailAddressAndPassward(mailAddress, password);
 		return administrator;
 	}
+	public boolean isMailAddressExist(String mailAddress) {
+		return administratorRepository.findByMailAddress(mailAddress) != null;
+	}
 }
