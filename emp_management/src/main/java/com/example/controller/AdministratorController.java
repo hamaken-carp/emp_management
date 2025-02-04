@@ -82,7 +82,7 @@ public class AdministratorController {
 		}
 		
 		if (result.hasErrors()) {
-			redirectAttributes.addFlashAttribute("errorMessage", "メールアドレス形式で入力してください");
+			model.addAttribute("errorMessage", "メールアドレス形式で入力してください");
 			return "administrator/insert";
 		}
 		
