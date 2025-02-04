@@ -72,7 +72,7 @@
                         th:field="*{name}"
                         th:errorclass="error-input"
                         value="山田太郎"
-                        required
+
                       />
                     </div>
                   </div>
@@ -89,7 +89,7 @@
                         メールアドレスを入力してください
                       </label>
                       <input
-                        type="email"
+                        type="text"
                         name="mailAddress"
                         id="mailAddress"
                         class="form-control"
@@ -97,7 +97,7 @@
                         th:field="*{mailAddress}"
                         th:errorclass="error-input"
                         value="yamada@mail.com"
-                        required
+                        
                       />
                       <div th:if="${errorMessage}" class="alert alert-danger">
                         <span th:text="${errorMessage}"></span>
@@ -125,8 +125,8 @@
                         th:field="*{password}"
                         th:errorclass="error-input"
                         value="xxxxxxxx"
-                        required
-                        minlength="8"
+                        
+                        
                       />
                     </div>
                   </div>
